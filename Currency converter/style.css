@@ -1,0 +1,94 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/17454.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire screen while maintaining aspect ratio */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    text-align: center;
+    background-color: rgba(30, 30, 30, 0.8); /* Semi-transparent dark overlay */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(174, 255, 0);
+    transition: box-shadow 0.3s ease; /* Smooth transition for box shadow */
+}
+
+.wrapper:hover {
+    box-shadow: 0 0 20px 5px rgba(174, 255, 0, 0.8); /* Glow effect on hover */
+}
+
+header {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #9aff02; /* Light green color */
+    transition: text-shadow 0.3s ease; /* Smooth transition for text shadow */
+}
+
+.amount, .drop-list, .exchange-rate, button {
+    margin-bottom: 20px;
+}
+
+.amount p, .from p, .to p {
+    margin: 0 0 5px;
+    font-size: 1.2rem;
+}
+
+input, select {
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #2a2a2a;
+    color: #ffffff;
+}
+
+.select-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.select-box img {
+    width: 48px;
+    height: 36px;
+    border-radius: 5px;
+}
+
+.icon {
+    font-size: 2rem;
+    color: #00b0ff; /* Light blue color */
+    margin: 20px 0;
+}
+
+button {
+    background-color: #00b0ff; /* Light blue color */
+    color: #121212;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0086b3; /* Darker shade of blue on hover */
+}
+
+.exchange-rate {
+    font-size: 1.5rem;
+    color: #bfff00; /* Light blue color */
+    text-shadow: 0 0 5px #00b0ff, 0 0 10px #00b0ff, 0 0 20px #00b0ff; /* Adjusted text shadow */
+}

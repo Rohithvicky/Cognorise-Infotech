@@ -1,0 +1,127 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    justify-content: center;
+    gap: 20px;
+    background: url('./79z_2203_w012_n001_42b_p12_42.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.calculator {
+    background-color: rgba(30, 30, 30, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px; /* Adjusted width for responsiveness */
+    text-align: center; /* Center align contents */
+    margin: auto; /* Center align horizontally */
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: #76ff03;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #76ff03;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.error {
+    color: #ff1744;
+    font-size: 12px;
+    display: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #76ff03;
+    color: #121212;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #64dd17;
+    transform: scale(1.05);
+}
+
+.result {
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.result.show {
+    opacity: 1;
+}
+
+.tips {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #76ff03;
+}
+
+#bmiResult {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#bmiCategory {
+    font-size: 18px;
+    color: #ff1744;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center; /* Center items vertically on smaller screens */
+    }
+    .calculator {
+        width: 100%;
+        max-width: 100%; /* Full width on smaller screens */
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced BMI Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>BMI Calculator</h1>
+            <div class="input-group">
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" name="height" placeholder="Enter your height" maxlength="3">
+                <small class="error" id="heightError"></small>
+            </div>
+            <div class="input-group">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" name="weight" placeholder="Enter your weight" maxlength="3">
+                <small class="error" id="weightError"></small>
+            </div>
+            <button onclick="calculateBMI()">Calculate BMI</button>
+            <div class="result">
+                <div id="bmiResult"></div>
+                <div id="bmiCategory"></div>
+                <div id="healthTips" class="tips"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
